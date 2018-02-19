@@ -1,0 +1,15 @@
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	st = status
+	dfs = diff --staged
+	logg = log --graph --decorate --oneline --abbrev-commit --all
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	alias = "!git config -l | grep alias | cut -c 7-"	
+
+[user]
+	name = Ricardo Gonzalez Rangel
+	email = r.grangel@icloud.com
