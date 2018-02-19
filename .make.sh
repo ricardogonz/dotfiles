@@ -4,7 +4,7 @@
 
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files=".bashrc .vimrc .zshrc .gitconfig .tmux.conf"
+files=".vimrc .zshrc .gitconfig"
 
 echo "Creating $olddir for backup of any existing dotfiles in ~"
 mkdir -p $olddir
@@ -19,4 +19,4 @@ for file in $files; do
     mv ~/$file ~/dotfiles_old/
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/$file
-
+done
