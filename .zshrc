@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Load bash_profile
+source ~/.bash_profile
+
 # zsh completions using homebrew
 fpath=(/usr/local/share/zsh-completions $fpath)
 
