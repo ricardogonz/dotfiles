@@ -60,7 +60,18 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  brew
+  django
+  docker
   git
+  iterm2
+  ng
+  node
+  npx
+  pep8
+  python
+  tmux
+  yarn
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,12 +108,13 @@ source $ZSH/oh-my-zsh.sh
 # Load bash_profile
 source ~/.bash_profile
 
-# zsh completions using homebrew
+# Brew => zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# zsh-syntax-highlighting
+# Brew => zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Iterm integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 autoload -U compinit
